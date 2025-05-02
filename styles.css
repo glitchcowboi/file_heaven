@@ -1,0 +1,486 @@
+/* Windows 95 Theme */
+:root {
+    --win95-gray: #c0c0c0;
+    --win95-dark: #808080;
+    --win95-darker: #404040;
+    --win95-light: #ffffff;
+    --win95-blue: #000080;
+}
+
+#swisshouseImg {
+    width: 20%;
+    height: auto;
+}
+
+#notes1Img {
+    width: 15%;
+    height: auto;
+}
+
+#covidImg {
+    width: 20%;
+    height: auto;
+}
+
+#weatherImg {
+    width: 20%;
+    height: auto;
+}
+
+#snapImg {
+    width: 15%;
+    height: auto;
+}
+
+#samtextImg {
+    width: 25%;
+    height: auto;
+}
+
+#tinderImg {
+    width: 26%;
+    height: auto;
+}
+
+#bigSurImg {
+    width: 30%;
+    height: auto;
+}
+
+#gameboiImg {
+    width: 30%;
+    height: auto;
+}
+
+#meme1Img {
+    width: 15%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desktop {
+    height: 100vh;
+    position: relative;
+    display: none;
+    background-image: url('images/clouds.jpg');
+    background-size: cover; /* This will make the image cover the entire viewport */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat;
+}
+
+/* Desktop Icons */
+.desktop-icons {
+    padding: 20px;
+    z-index: 30;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.icon span {
+    display: block;
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 2px;
+}
+
+/* Taskbar */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background-color: var(--win95-gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-top: 2px solid var(--win95-light);
+    z-index: 11000;
+}
+
+/* Start Button */
+.start-button {
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    background-color: var(--win95-gray);
+    border-top: 2px solid var(--win95-light);
+    border-left: 2px solid var(--win95-light);
+    border-bottom: 2px solid var(--win95-darker);
+    border-right: 2px solid var(--win95-darker);
+    cursor: pointer;
+}
+
+.start-button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.start-button span {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* System Tray */
+.system-tray {
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    border-top: 2px solid var(--win95-darker);
+    border-left: 2px solid var(--win95-darker);
+    border-bottom: 2px solid var(--win95-light);
+    border-right: 2px solid var(--win95-light);
+}
+
+.clock {
+    font-size: 11px;
+    padding: 2px 4px;
+}
+
+/* Start Menu */
+.start-menu {
+    position: fixed;
+    bottom: 28px;
+    left: 0;
+    width: 200px;
+    background-color: var(--win95-gray);
+    border-top: 2px solid var(--win95-light);
+    border-left: 2px solid var(--win95-light);
+    border-bottom: 2px solid var(--win95-darker);
+    border-right: 2px solid var(--win95-darker);
+    display: none;
+    z-index: 1002;
+}
+
+.start-menu.active {
+    display: block;
+}
+
+.start-menu-header {
+    background-color: var(--win95-blue);
+    color: white;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.start-menu-header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.menu-items {
+    padding: 2px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: var(--win95-blue);
+    color: white;
+}
+
+.menu-item img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.menu-item span {
+    font-size: 11px;
+}
+
+.bios-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    z-index: 12000;
+}
+
+.bios-text {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.bios-screen.hidden {
+    display: none;
+}
+
+/* Hide desktop initially */
+.desktop.visible {
+    display: block;
+}
+
+.shutdown-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.shutdown-top, .shutdown-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    transition: height 0.5s ease-in;
+}
+
+.shutdown-top {
+    top: 0;
+}
+
+.shutdown-bottom {
+    bottom: 0;
+}
+
+.shutdown-left, .shutdown-right {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: width 0.5s ease-in;
+}
+
+.shutdown-left {
+    left: 0;
+}
+
+.shutdown-right {
+    right: 0;
+}
+
+.shutdown-active .shutdown-top,
+.shutdown-active .shutdown-bottom {
+    height: 50vh;
+}
+
+.shutdown-active .shutdown-left,
+.shutdown-active .shutdown-right {
+    width: 50vw;
+}
+
+/* Tombstone style */
+.rip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff93fa;
+    font-family: monospace;
+    white-space: pre;
+    opacity: 0;
+    z-index: 10001;
+    display: none;
+    font-size: 8px;
+    line-height: 1;
+    text-align: center;
+}
+
+.rip.fade-in {
+    display: block;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: var(--win95-gray);
+    border: 2px solid;
+    border-top-color: var(--win95-light);
+    border-left-color: var(--win95-light);
+    border-right-color: var(--win95-darker);
+    border-bottom-color: var(--win95-darker);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.window-titlebar {
+    background: var(--win95-blue);
+    color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.window-title {
+    padding: 0 4px;
+    font-weight: bold;
+}
+
+.window-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.window-controls button {
+    width: 16px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 1;
+    padding: 0;
+    background: var(--win95-gray);
+    border: 1px solid;
+    border-top-color: var(--win95-light);
+    border-left-color: var(--win95-light);
+    border-right-color: var(--win95-darker);
+    border-bottom-color: var(--win95-darker);
+    cursor: pointer;
+}
+
+.window-content {
+    padding: 2px;
+    background: white;
+}
+
+.notepad-textarea {
+    width: 100%;
+    height: 300px;
+    border: none;
+    resize: none;
+    padding: 2px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.folder {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: float 20s infinite linear;
+    pointer-events: auto; /* This makes folders clickable */
+}
+
+.folder img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.folder span {
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.memory-folder {
+    position: absolute;
+    width: 75px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;      /* Prevents all mouse interactions */
+}
+
+.memory-folder img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.memory-folder span {
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 2px;
+}
+
+.memory-folder:hover {
+    /* If you want hover styles, you can still use them here */
+}
+
+.memory-folder * {
+    pointer-events: none;      /* Ensures children also don't receive events */
+}
+
+.random-snap, .desktop-draggable {
+    position: absolute;
+    cursor: grab;
+    z-index: 5;
+    /* Optional: add a drop shadow for visibility */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.custom-tooltip {
+    display: none;
+    position: absolute;
+    max-width: 250px;
+    background: rgba(30, 30, 30, 0.95);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    z-index: 1001;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    white-space: pre-line;
+}
+

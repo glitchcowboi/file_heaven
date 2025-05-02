@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add BIOS screen before desktop -->
+    <div class="bios-screen" id="biosScreen">
+        <div class="bios-text" id="biosText"></div>
+    </div>
+
+        <!-- BEVERLY IF YOU SEE THIS DON"T JUDGE ME FOR THE SHITTY CODE LOL -->
+
+    <div class="desktop">
+        <!-- Desktop Icons -->
+        <div class="desktop-icons">
+            <div class="icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" alt="My Computer">
+                <span>My Computer</span>
+            </div>
+            <div class="icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="My Documents">
+                <span>My Documents</span>
+            </div>
+            <div class="icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-4.png" alt="Recycle Bin">
+                <span>Recycle Bin</span>
+            </div>
+            <!-- Memory Folders -->
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 001">
+                <span>Memory 001</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 002">
+                <span>Memory 002</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 003</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 004</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 005</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 006</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 007</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 008</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 009</span>
+            </div>
+            <div class="memory-folder">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Memory 003">
+                <span>Memory 010</span>
+            </div>
+        </div>
+        <img src="images/snap1.PNG" alt="Snap 1" class="random-snap desktop-draggable" id="randomSnap">
+        <div id="snap1Tooltip" class="custom-tooltip">
+          My sister is so funny. Sometimes I miss being young and silly and it seems so stupid to keep snapchats between us but I don't want to imagine a world where I don't have her in it making me laugh.
+        </div>
+        <img src="images/swisshouse02.jpeg" alt="Swiss House" class="random-snap desktop-draggable" id="swisshouseImg">
+        <div id="swisshouseTooltip" class="custom-tooltip">
+            I still remember the smell of rain and the musty scent of that old house. I could have sworn the giant snails that lived in the gardenhad blue paint on their shells from when someone let their pets free but I can't find any evidence of it. I almsot feel like the digital copies have cheapened my actual memory. I don't even know if this detail was real or something I made up as a child full of imagination. Maybe I'll never know.
+        </div>
+        <img src="images/weather.JPG" alt="weather" class="random-snap desktop-draggable" id="weatherImg">
+        <div id="weatherTooltip" class="custom-tooltip">
+          Back when I used to skate all the time I would check the weather to see where the spots were or if it was too rainy. I used to love the skate community but it got kinda weird after COVID. This tiny, tight knit community of weirdos all of a sudden found ourselves in the whirlwind of an Internet fad and it felt like it lost some of the energy that made it so fun after that. TikTok trends are so weird.
+        </div>
+        <img src="images/samtext.PNG" alt="sam text" class="random-snap desktop-draggable" id="samtextImg">
+        <div id="samtextTooltip" class="custom-tooltip">
+          I miss you so much. I wish there was more I could do for you. I hope that you are still in that apartment and not back on the street. Even though you fell off the face of the Earth I think about you all the time and you were one of my best friends. I don't know if I believe in God but I pray for you and wish I spoke to you for longer last time we were on the phone.
+        </div>
+        <img src="images/tinder.PNG" alt="tinder" class="random-snap desktop-draggable" id="tinderImg">
+        <div id="tinderTooltip" class="custom-tooltip">
+          I used to feel so insecure about who I was. Everyone always had crushes on my friends and I was always told I gave off don't fuck with me vibes. Now I am thankful for the ways in which that protected me and mourn the ways in which I tried to abandon that part of myself for approval.
+        </div>
+        <img src="images/gameboi.JPG" alt="gameboi" class="random-snap desktop-draggable" id="gameboiImg">
+        <div id="gameboiTooltip" class="custom-tooltip">
+          It me. :)
+        </div>
+        <img src="images/meme1.jpg" alt="meme1" class="random-snap desktop-draggable" id="meme1Img">
+        <div id="meme1Tooltip" class="custom-tooltip">
+          Didn't back then... still don't.
+        </div>
+        <img src="images/bigsur1.JPG" alt="big sur" class="random-snap desktop-draggable" id="bigSurImg">
+        <div id="bigSurTooltip" class="custom-tooltip">
+            Tell me why working at this stressful ass coffee shop was the best job I've ever had. It was insane but also a place where I could be myself and make others happy. When it would rain the kitchen and area with the brick oven would leak like hell. Once we had to chase away a baby raccoon in the middle of dinner service with a wedding out back. It's gone now, burnt to the ground. All I have left are my memories and digital copies of what once was.
+        </div>
+        <img src="images/covidtext.PNG" alt="Covid Text" class="random-snap desktop-draggable" id="covidImg">
+        <div id="covidTooltip" class="custom-tooltip">
+            COVID was so scary at first. I felt so bad for my partner whose family was all back in NY while we were in CA. Now looking back I am glad we broke up not long after this tex but God it was so hard to have that happen all at once. There are screenshots of that breakup too... but I don't like to think about that. It took so long to get over that and even longer to trust them again.
+        </div>
+        <img src="images/notes1.PNG" alt="Notes 1" class="random-snap desktop-draggable" id="notes1Img">
+        <div id="notes1Tooltip" class="custom-tooltip">
+          My notes. There are so many weird thoughts burried in here. I don't even know where roasted taint came from... probably a long night with my friends. I was traveling and having so much fun back then with them. I also just started to fall in love. Sometimes I wish I remembered what that felt like but then I wake up next to my partner and I realize how great it is to have stable love.
+        </div>
+    </div>
+
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="start-button">
+                <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" alt="Start">
+                <span>Start</span>
+            </div>
+            <div class="system-tray">
+                <div class="clock" id="clock">12:00 PM</div>
+            </div>
+        </div>
+
+        <!-- Start Menu -->
+        <div class="start-menu" id="startMenu">
+            <div class="start-menu-header">
+                <span>File Heaven ˚ʚ♡ɞ˚</span>
+            </div>
+                <div class="menu-item">
+                    <img src="https://win98icons.alexmeub.com/icons/png/shut_down_normal-4.png" alt="Shut Down">
+                    <span>Shut Down...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Add this before </body> -->
+    <div class="shutdown-animation" id="shutdownAnimation">
+        <div class="shutdown-top"></div>
+        <div class="shutdown-bottom"></div>
+        <div class="shutdown-left"></div>
+        <div class="shutdown-right"></div>
+    </div>
+    <div class="rip" id="rip">
+        <pre>
+           .                                                       ..                               
+          .                         ..                            .                          ..     
+        . .                                     ....              .                                 
+                                      ..++################++.  .                                    
+    .                             .-++###++--------------++###++-.                                  
+    .                          .+##++--------------------------+###+.                               
+                             -###+--------------------------------+###-                             
+                           +##+-----------++++++++++++++++-----------+##+                           
+                         -##+---------++++++++++++++++++++++++---------+##-                         
+                       .+#+--------++++++++++-----------+++++++++--------+#+.                       
+                      -##+------+++++++--++------------------+++++++------+##-                      
+                     +##-------+++++------+---------------------+++++-------##+                     
+                    +##------+++++--------------------------------+++++------+#+                    
+                   -##------++++------------------------------------++++------##-                   
+                  -##------+++----------------------------------------+++------##-                  
+                  +#+-----+++------------------------------------------+++------#+.                 
+                 -#+-----+++--------------------------------------------+++-----+#+                 
+                .##+-----++-----------.----------------------------------++-----+##.           .    
+                -##-----+++-----------.------------------------...--------++-----##-          .     
+                -#+-----++------+++--------------++-------+++++---.-------++-----+#-      . .       
+                -#+-----++-----+########--------+##+------+###+#+++-------++-----+#-    . .         
+                -#+-----+------++#+--+###-------+##+------+##---###+-------+-----+#-                
+                -#+-----+------+##+----##+------+##+------+##----###-------+-----+#-                
+                -#+-----+------+##+----##+------+##+------+##----###-------+-----+#-                
+                -#+-----+------+##+--+###-------+##+------+##---###+-------+-----+#-                
+                -#+-----+------+########--------+##+------+#######+--------+-----+#-                
+                -#+-----+------+###+#####-------+##+------+##++------------+-----+#-                
+                -#+-----+------+##+----##+------+##+------+##--------------+-----+#-                
+                -#+-----+------+##+----###------+##+------+##--------------+-----+#-                
+                -#+-----+------+##+----###------+##+------+##--------------+-----+#-                
+                -#+-----+--------------------------------------------------+-----+#-                
+           .    -#+-----+--------------------------------------------------+-----+#-                
+          .     -#+-----+-----------..-----------------------------.-------+-----+#-        .       
+          .     -#+-----+-----+--------------------------------------------+-----+#-                
+      .         -#+-----+----+-----..-..-----------------------------------+-----+#-                
+    . .         -#+-----+++++--------.-------------------------------------+-----+#-                
+    ..          -#+-----+--------------------------------------------------+-----+#-                
+                -#+-----+--------------------------------------------+-----+-----+#-                
+                -#+-----+--------------------------------------------------+-----+#-                
+                -#+-----+---------------------------------------------+----+-----+#-                
+                -#+-----+----------------------------------------------+---+-----+#-                
+                -#+-----+-----------------------------------------------++++-----+#-                
+      .---------+#+-----+--------------------------------------------------+-----+#+---------.      
+      .##++++++++++....---................................................---....++++++++++##.      
+      .#+..................................................................................+#.      
+      .##----------------------------------------------------------------------------------+#.      
+      .##----------------------------------------------------------------------------------+#.      
+      .##----------------------------------------------------------------------------------+#.      
+      .##-----------------------------.----------------------------------------------------##. .    
+      .++############################++######################+#+++##+#######################+.      
+       ......................................................................................       
+                                .                                                      .            
+                                .                                                       .           
+        </pre>
+    </div>
+    <div class="notepad-popup" id="notepadPopup" style="display:none;">
+      <div class="notepad-titlebar">
+        <span>Notepad</span>
+        <button class="notepad-close" id="notepadCloseBtn">×</button>
+      </div>
+      <div class="notepad-content">
+        <textarea>Text</textarea>
+      </div>
+    </div>
+    <script>
+    document.getElementById('notepadCloseBtn').addEventListener('click', () => {
+        document.getElementById('notepadPopup').style.display = 'none';
+    });
+
+    let myComputerIcon = null;
+    let myDocumentsIcon = null;
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+        const img = icon.querySelector('img');
+        if (img && img.alt === "My Computer") myComputerIcon = icon;
+        if (img && img.alt === "My Documents") myDocumentsIcon = icon;
+    });
+
+    function randomizeFolders() {
+        const desktop = document.querySelector('.desktop');
+        const folders = document.querySelectorAll('.memory-folder');
+        const desktopRect = desktop.getBoundingClientRect();
+        folders.forEach(folder => {
+            const maxLeft = desktopRect.width - 80;
+            const maxTop = desktopRect.height - 80;
+            const left = Math.random() * maxLeft;
+            const top = Math.random() * maxTop;
+            folder.style.left = `${left}px`;
+            folder.style.top = `${top}px`;
+        });
+    }
+
+    function randomizeDesktopImages() {
+        const desktop = document.querySelector('.desktop');
+        const images = document.querySelectorAll('.random-snap.desktop-draggable');
+        if (!desktop) return;
+        images.forEach(img => {
+            // Wait for image to load to get correct dimensions
+            img.onload = () => {
+                const desktopRect = desktop.getBoundingClientRect();
+                const imgWidth = img.offsetWidth;
+                const imgHeight = img.offsetHeight;
+                const maxLeft = desktopRect.width - imgWidth;
+                const maxTop = desktopRect.height - imgHeight - 30; // avoid taskbar
+                const left = Math.random() * maxLeft;
+                const top = Math.random() * maxTop;
+                img.style.left = `${left}px`;
+                img.style.top = `${top}px`;
+            };
+            if (img.complete) img.onload();
+        });
+    }
+
+    function makeDesktopImagesDraggable() {
+        let currentDrag = null;
+        let offsetX = 0, offsetY = 0;
+
+        document.querySelectorAll('.desktop-draggable').forEach(img => {
+            img.style.cursor = 'pointer';
+
+            img.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (!currentDrag) {
+                    // Pick up
+                    currentDrag = img;
+                    // Calculate offset so the image doesn't jump
+                    offsetX = e.clientX - img.offsetLeft;
+                    offsetY = e.clientY - img.offsetTop;
+                    img.style.zIndex = 10;
+                    document.body.style.userSelect = 'none';
+                    img.style.cursor = 'grabbing';
+                } else if (currentDrag === img) {
+                    // Drop
+                    currentDrag.style.zIndex = 5;
+                    currentDrag.style.cursor = 'pointer';
+                    currentDrag = null;
+                    document.body.style.userSelect = '';
+                }
+            });
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (currentDrag) {
+                currentDrag.style.left = (e.clientX - offsetX) + 'px';
+                currentDrag.style.top = (e.clientY - offsetY) + 'px';
+            }
+        });
+
+        // Optional: drop if you click anywhere else on the document
+        document.addEventListener('click', function(e) {
+            if (currentDrag) {
+                currentDrag.style.zIndex = 5;
+                currentDrag.style.cursor = 'pointer';
+                currentDrag = null;
+                document.body.style.userSelect = '';
+            }
+        });
+    }
+
+    // Call this after the desktop becomes visible
+    document.addEventListener('DOMContentLoaded', () => {
+        const desktop = document.querySelector('.desktop');
+        if (desktop.classList.contains('visible')) {
+            randomizeFolders();
+            randomizeDesktopImages();
+            makeDesktopImagesDraggable();
+        } else {
+            // If using BIOS, wait for desktop to become visible
+            const observer = new MutationObserver(() => {
+                if (desktop.classList.contains('visible')) {
+                    randomizeFolders();
+                    randomizeDesktopImages();
+                    makeDesktopImagesDraggable();
+                    observer.disconnect();
+                }
+            });
+            observer.observe(desktop, { attributes: true });
+        }
+
+        // Tooltip for swiss house
+        const swissImg = document.getElementById('swisshouseImg');
+        const swissTooltip = document.getElementById('swisshouseTooltip');
+        if (swissImg && swissTooltip) {
+            swissImg.addEventListener('mouseenter', function(e) {
+                swissTooltip.style.display = 'block';
+                const rect = swissImg.getBoundingClientRect();
+                swissTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                swissTooltip.style.top = (rect.top + window.scrollY - swissTooltip.offsetHeight - 10) + 'px';
+            });
+            swissImg.addEventListener('mousemove', function(e) {
+                swissTooltip.style.left = (e.pageX + 10) + 'px';
+                swissTooltip.style.top = (e.pageY - swissTooltip.offsetHeight - 10) + 'px';
+            });
+            swissImg.addEventListener('mouseleave', function() {
+                swissTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for covid image
+        const covidImg = document.getElementById('covidImg');
+        const covidTooltip = document.getElementById('covidTooltip');
+        if (covidImg && covidTooltip) {
+            covidImg.addEventListener('mouseenter', function(e) {
+                covidTooltip.style.display = 'block';
+                const rect = covidImg.getBoundingClientRect();
+                covidTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                covidTooltip.style.top = (rect.top + window.scrollY - covidTooltip.offsetHeight - 10) + 'px';
+            });
+            covidImg.addEventListener('mousemove', function(e) {
+                covidTooltip.style.left = (e.pageX + 10) + 'px';
+                covidTooltip.style.top = (e.pageY - covidTooltip.offsetHeight - 10) + 'px';
+            });
+            covidImg.addEventListener('mouseleave', function() {
+                covidTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for weather image
+        const weatherImg = document.getElementById('weatherImg');
+        const weatherTooltip = document.getElementById('weatherTooltip');
+        if (weatherImg && weatherTooltip) {
+            weatherImg.addEventListener('mouseenter', function(e) {
+                weatherTooltip.style.display = 'block';
+                const rect = weatherImg.getBoundingClientRect();
+                weatherTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                weatherTooltip.style.top = (rect.top + window.scrollY - weatherTooltip.offsetHeight - 10) + 'px';
+            });
+            weatherImg.addEventListener('mousemove', function(e) {
+                weatherTooltip.style.left = (e.pageX + 10) + 'px';
+                weatherTooltip.style.top = (e.pageY - weatherTooltip.offsetHeight - 10) + 'px';
+            });
+            weatherImg.addEventListener('mouseleave', function() {
+                weatherTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for samtext image
+        const samtextImg = document.getElementById('samtextImg');
+        const samtextTooltip = document.getElementById('samtextTooltip');
+        if (samtextImg && samtextTooltip) {
+            samtextImg.addEventListener('mouseenter', function(e) {
+                samtextTooltip.style.display = 'block';
+                const rect = samtextImg.getBoundingClientRect();
+                samtextTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                samtextTooltip.style.top = (rect.top + window.scrollY - samtextTooltip.offsetHeight - 10) + 'px';
+            });
+            samtextImg.addEventListener('mousemove', function(e) {
+                samtextTooltip.style.left = (e.pageX + 10) + 'px';
+                samtextTooltip.style.top = (e.pageY - samtextTooltip.offsetHeight - 10) + 'px';
+            });
+            samtextImg.addEventListener('mouseleave', function() {
+                samtextTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for tinder image
+        const tinderImg = document.getElementById('tinderImg');
+        const tinderTooltip = document.getElementById('tinderTooltip');
+        if (tinderImg && tinderTooltip) {
+            tinderImg.addEventListener('mouseenter', function(e) {
+                tinderTooltip.style.display = 'block';
+                const rect = tinderImg.getBoundingClientRect();
+                tinderTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                tinderTooltip.style.top = (rect.top + window.scrollY - tinderTooltip.offsetHeight - 10) + 'px';
+            });
+            tinderImg.addEventListener('mousemove', function(e) {
+                tinderTooltip.style.left = (e.pageX + 10) + 'px';
+                tinderTooltip.style.top = (e.pageY - tinderTooltip.offsetHeight - 10) + 'px';
+            });
+            tinderImg.addEventListener('mouseleave', function() {
+                tinderTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for big sur image
+        const bigSurImg = document.getElementById('bigSurImg');
+        const bigSurTooltip = document.getElementById('bigSurTooltip');
+        if (bigSurImg && bigSurTooltip) {
+            bigSurImg.addEventListener('mouseenter', function(e) {
+                bigSurTooltip.style.display = 'block';
+                const rect = bigSurImg.getBoundingClientRect();
+                bigSurTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                bigSurTooltip.style.top = (rect.top + window.scrollY - bigSurTooltip.offsetHeight - 10) + 'px';
+            });
+            bigSurImg.addEventListener('mousemove', function(e) {
+                bigSurTooltip.style.left = (e.pageX + 10) + 'px';
+                bigSurTooltip.style.top = (e.pageY - bigSurTooltip.offsetHeight - 10) + 'px';
+            });
+            bigSurImg.addEventListener('mouseleave', function() {
+                bigSurTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for gameboi image
+        const gameboiImg = document.getElementById('gameboiImg');
+        const gameboiTooltip = document.getElementById('gameboiTooltip');
+        if (gameboiImg && gameboiTooltip) {
+            gameboiImg.addEventListener('mouseenter', function(e) {
+                gameboiTooltip.style.display = 'block';
+                const rect = gameboiImg.getBoundingClientRect();
+                gameboiTooltip.style.left = (rect.left + window.scrollX) + 'px';
+                gameboiTooltip.style.top = (rect.top + window.scrollY - gameboiTooltip.offsetHeight - 10) + 'px';
+            });
+            gameboiImg.addEventListener('mousemove', function(e) {
+                gameboiTooltip.style.left = (e.pageX + 10) + 'px';
+                gameboiTooltip.style.top = (e.pageY - gameboiTooltip.offsetHeight - 10) + 'px';
+            });
+            gameboiImg.addEventListener('mouseleave', function() {
+                gameboiTooltip.style.display = 'none';
+            });
+        }
+
+        // Tooltip for meme1 image
+        const meme1Img = document.getElementById('meme1Img');
+        const meme1Tooltip = document.getElementById('meme1Tooltip');
+        if (meme1Img && meme1Tooltip) {
+            meme1Img.addEventListener('mouseenter', function(e) {
+                meme1Tooltip.style.display = 'block';
+                const rect = meme1Img.getBoundingClientRect();
+                meme1Tooltip.style.left = (rect.left + window.scrollX) + 'px';
+                meme1Tooltip.style.top = (rect.top + window.scrollY - meme1Tooltip.offsetHeight - 10) + 'px';
+            });
+            meme1Img.addEventListener('mousemove', function(e) {
+                meme1Tooltip.style.left = (e.pageX + 10) + 'px';
+                meme1Tooltip.style.top = (e.pageY - meme1Tooltip.offsetHeight - 10) + 'px';
+            });
+            meme1Img.addEventListener('mouseleave', function() {
+                meme1Tooltip.style.display = 'none';
+            });
+        }
+    });
+
+    </script>
+    <!-- Add this before the closing </body> tag -->
+    <div class="window" id="notepadWindow" style="display: none;">
+        <div class="window-titlebar">
+            <div class="window-title">Notepad</div>
+            <div class="window-controls">
+                <button class="window-minimize">_</button>
+                <button class="window-maximize">□</button>
+                <button class="window-close">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <textarea class="notepad-textarea"></textarea>
+        </div>
+    </div>
+</body>
+</html>
